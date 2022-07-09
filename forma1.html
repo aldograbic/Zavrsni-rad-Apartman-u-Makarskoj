@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Rezervacija</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+	<link rel="shortcut icon" type="image/x-icon" href="slike/x-icon.ico">
+</head>
+<body>
+    <header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Početna stranica</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<h1>Rezervirajte ovdje!</h1>
+		<form action="rezultat.html" method="get">
+			<fieldset id="forma1">
+				<legend>Osobni podaci</legend>
+				<div>
+					<label for="moje_ime">Ime</label>
+					<input type="text" name="Ime" id="moje_ime" placeholder="Upišite svoje ime" required autofocus>
+				</div>
+				<div>
+					<label for="moje_prezime">Prezime</label>
+					<input type="text" name="Prezime" id="moje_prezime" placeholder="Upišite svoje prezime" required>
+				</div>
+				<div>
+					<label for="moj_email">E-mail:</label>
+					<input type="email" name="E-mail" id="moj_email" placeholder="Upišite svoj e-mail" required>
+				</div>
+				<div>
+                    <label for="moj_telefon">Broj telefona:</label>
+                    <input type="tel" name="Telefon" id="moj_telefon" placeholder="Upišite svoj broj telefona" required>
+                </div>
+				<div>
+					<label for="moja_adresa">Adresa:</label>
+					<input type="text" name="Adresa" id="moja_adresa" placeholder="Upišite svoju adresu" required>
+				</div>
+				<div>
+					<label for="moj_grad">Grad:</label>
+					<input type="text" name="Grad" id="moj_grad" placeholder="Upišite svoj grad" required>
+				</div>
+				<div>
+					<label for="moj_post_broj">Poštanski broj:</label>
+					<input type="number" min="10000" step="10" name="Poštanski broj" id="moj_post_broj" placeholder="Upišite svoj poštanski broj" required>
+				</div>
+			</fieldset>
+
+            <fieldset id="forma2">
+                <legend>Apartman</legend>
+				<div>
+					<label for="moje_poslovno_osobno">Poslovno/osobno:</label>
+					<input type="radio" name="Poslovno" id="moje_poslovno_osobno">Poslovno
+					<input type="radio" name="Osobno" id="moje_poslovno_osobno2">Osobno
+				</div>
+                <div>
+                    <label for="moj_broj_odraslih">Broj odraslih:</label>
+                    <input type="number" name="Broj odraslih" id="moj_broj_odraslih" min="1" max="10" required>
+                </div>
+				<div>
+                    <label for="moj_broj_djece">Broj djece:</label>
+                    <input type="number" name="Broj djece" id="moj_broj_djece" min="0" max="10">
+                </div>
+				<div>
+					<label for="moji_ljubimci">Kućni ljubimci:</label>
+					<input type="radio" name="Kućni ljubimci(DA)" id="moji_ljubimci">DA
+				</div>
+
+				<div>
+                    <label for="moje_vrijeme_dolaska">Vrijeme dolaska:</label>
+                    <input type="time" name="Dolazak" id="moje_vrijeme_dolaska">
+                </div>
+				<div>
+					<label for="moje_vrijeme_odlaska">Vrijeme odlaska:</label>
+					<input type="time" name="Odlazak" id="moje_vrijeme_odlaska">
+				</div>
+				<div>
+					<label for="moje_park_mjesto">Parkirnih mjesta:</label>
+					<input type="number" name="Broj potrebnih parkirnih mjesta" id="moje_park_mjesto" min="0" max="2">
+				</div>
+				
+				
+				<div>
+					<label for="moj_broj_rucnika_plahta">Broj ručnika/plahta:</label>
+					<input type="number" name="Broj ručnika/plahta" id="moj_broj_rucnika_plahta" min="0" max="10">
+				</div>
+            </fieldset>
+
+			<fieldset id="forma3">
+				<legend>Plaćanje</legend>
+				<div>
+					<label for="moje_plaćanje">Odaberite karticu:</label>
+					<select name="Plaćanje" id="moje_plaćanje">
+						<option value="Mastercard / Eurocard">Mastercard / Eurocard</option>
+						<option value="Visa">Visa</option>
+						<option value="Visa Electron">Visa Electron</option>
+					</select>
+				</div>
+				<br>
+				<div>
+					<button type="submit">Potvrdi</button> <button type="reset">Ponovi</button>
+				</div>
+			</fieldset>
+		</form>
+			
+	</main>
+	
+	<footer>
+		<p> Copyright &copy; <time datetime="2022">2022</time> Aldo Grabić
+	</footer>
+
+</body>
+</html>
+
+
+
+

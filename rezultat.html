@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Rezultat</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="shortcut icon" type="image/x-icon" href="slike/x-icon.ico">
+</head>
+<body>
+    <section id="rezultat">
+        <h1>Uspješno ste rezervirali!</h1>
+        <h2>Besplatno otkazivanje u određenom roku!</h2>
+        <p><b>Detalji rezervacije:</b></p>
+        <script>
+            const rezultatLista = document.getElementById('rezultat')
+            new URLSearchParams(window.location.search).forEach((value,
+            name) => {
+                rezultatLista.append(`${name}: ${value}`)
+                rezultatLista.append(document.createElement('br'))
+                rezultatLista.append(document.createElement('br'))
+            })
+        </script>
+        
+        <form>
+            <label for="moja_ocjena">Koju ocjenu biste nam dali?</label>
+            <input type="range" id="moja_ocjena" value="3" min="1" max="5" oninput="this.nextElementSibling.value = this.value">
+            <output>3</output>
+        </form>
+
+        <button id="rezultat_gumb" onclick="location.href='index.html'" type="button">Natrag na početak</button>
+    </section>
+</body>
+</html>
