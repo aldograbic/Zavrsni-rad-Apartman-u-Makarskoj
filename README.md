@@ -1,3 +1,3 @@
 # Zavrsni-rad-Apartman-u-Makarskoj
-HTML / CSS / JS
-Web stranica za rezerviranje apartmana u Makarskoj. Projekt za završni rad.
+HTML / CSS / JS<br>
+Web stranica za rezerviranje apartmana u Makarskoj.<br> Projekt za završni rad.
